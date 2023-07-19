@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" href="img/pijao.jpg" type="image/jpg">
+        <title>Restaurante El Pijao</title>
+    </head>
+    <body>
+        <section class="container content-section">
+            <img src="img/pijao.jpg" style="height: 250px; width: 250px; display: block; margin: auto;"></img>
+            <h2 class="section-header">Nueva Factura</h2>
+            <div class="shop-items">
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Resumen de Factura</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Plato</span>
+                <span class="cart-price cart-header cart-column">Precio</span>
+                <span class="cart-quantity cart-header cart-column">Cantidad</span>
+            </div>
+            <div class="cart-items">
+            </div>
+        
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price"></span>
+            </div>
+        
+            <div>
+                <label>
+                  <input type="checkbox" id="propinaCheckbox">
+                  Incluir Servicio (10%)
+                </label>
+            </div>
+            <br>
+            <div class="button-container">
+                <button id="generarFacturaButton">GENERAR FACTURA</button>
+            </div>
+            <br>
+        </section>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
