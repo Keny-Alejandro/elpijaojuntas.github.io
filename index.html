@@ -8,72 +8,10 @@
         <link rel="icon" href="img/pijao.jpg" type="image/jpg">
         <title>Restaurante El Pijao</title>
     </head>
-    <style>
-        /* Estilos adicionales para la impresión */
-        @media print {
-            @page {
-                size: 58mm 200mm; /* Tamaño específico para el papel de la impresora térmica */
-                margin: 0; /* Sin márgenes por defecto */
-            }
-            body {
-                font-family: Arial, sans-serif;
-                font-size: 10px;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                padding: 5px;
-            }
-            .shop-item {
-                margin-bottom: 10px;
-            }
-            /* Ajustar el tamaño de la imagen para adaptarse al papel */
-            .shop-item-image {
-                max-width: 120px;
-                max-height: 120px;
-            }
-            /* Ajustar el tamaño del botón para adaptarse al papel */
-            .shop-item-button {
-                font-size: 8px;
-            }
-            /* Estilos para la factura impresa */
-            h1, h2, p {
-                margin: 0;
-                padding: 0;
-            }
-            .cart-row {
-                display: flex;
-                justify-content: space-between;
-            }
-            .cart-item {
-                flex: 1;
-            }
-            .cart-price, .cart-quantity {
-                flex: 0.5;
-                text-align: right;
-            }
-            .cart-total {
-                text-align: right;
-                font-weight: bold;
-                border-top: 1px solid #000;
-                margin-top: 10px;
-                padding-top: 5px;
-            }
-            /* Ajustar tamaño de fuente para impresión */
-            .section-header, .cart-header, .cart-item-title, .cart-total-title {
-                font-size: 10px;
-            }
-            .cart-item-image {
-                width: 40px;
-                height: auto;
-                border-radius: 5px;
-            }
-        }
-    </style>
     <body>
         <section class="container content-section">
             <img src="img/pijao.jpg" style="height: 250px; width: 250px; display: block; margin: auto;"></img>
-            <h2 class="section-header">Nueva Factura PRUEBA</h2>
+            <h2 class="section-header">Nueva Factura</h2>
             <div class="shop-items">
             </div>
         </section>
