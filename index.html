@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
         <link rel="icon" href="img/pijao.jpg" type="image/jpg">
-        <title>Restaurante El Pijao</title>
+        <title>Restaurante El Pijao PRUEBA IMPRESIÓN</title>
     </head>
     <style>
         /* Estilos adicionales para la impresión */
         @media print {
+            @page {
+                size: 58mm 200mm; /* Tamaño específico para el papel de la impresora térmica */
+                margin: 0; /* Sin márgenes por defecto */
+            }
             body {
                 font-family: Arial, sans-serif;
                 font-size: 10px;
@@ -54,6 +58,15 @@
                 border-top: 1px solid #000;
                 margin-top: 10px;
                 padding-top: 5px;
+            }
+            /* Ajustar tamaño de fuente para impresión */
+            .section-header, .cart-header, .cart-item-title, .cart-total-title {
+                font-size: 10px;
+            }
+            .cart-item-image {
+                width: 40px;
+                height: auto;
+                border-radius: 5px;
             }
         }
     </style>
